@@ -1,0 +1,26 @@
+extends ./_layouts/bootstrap.pug
+include ./_partials/mixins.pug
+block settings
+    -var title = 'Guia do PUG2'
+block append CSS
+    link(rel="stylesheet", href="css/style.css")
+
+block content
+    div.container
+        //-variaveis
+        -var name = 'Titulo'
+        div.row
+            //-inserindo classes e ids
+            h1.titulo.mais#outro #{name}
+        div.row 
+            //looos
+            -var fruits = ['banana', 'appe','mango']
+            ul.list
+                each fruit, i in fruits
+                    li.list-item #{'(' + i + ')'} I have a #{fruit}
+            -var names = ['isaias', 'liliane', 'paloma']
+            each name in names
+                +boots-panel(name)
+            
+
+        

@@ -1,0 +1,46 @@
+.w-btns
+    margin-top 40px
+    display flex
+    background-color #353333
+    color white
+    border-radius 10px
+    justify-content center
+    flex-wrap wrap
+    box-shadow 2px 2px 4px lightgray
+    padding 20px
+    padding-top 40px
+    padding-bottom 40px
+    .btn-chamamento
+        align-self center
+        width 32%
+        height 80px
+        text-align center
+        padding 5px
+        margin-top 10px
+        .clicavel
+            border 1px solid black
+            border-bottom 3px solid black
+            cursor pointer
+            background-color #272525
+            &:active
+                border-bottom 1px solid black
+                box-shadow inset 4px 4px 10px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0)
+                background-color #312e2e
+            h4 
+                margin 0
+                padding 0
+
+@media screen and (max-width: $queries['medium'])
+    .artigo-w
+        .dia 
+            font-size: 45px
+    .artigo-textos
+        padding-left: 20px              
+        h4
+            text-align: left
+        p 
+            text-align: left
+
+
+
+        

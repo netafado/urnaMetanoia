@@ -1,0 +1,61 @@
+/** 
+Definir as principais cores para os inputs
+*/
+$border-color = lightgray
+$border-color-focus = orange
+$border-radius = 4px
+
+
+input
+select
+textarea
+input.form-control
+select.form-control
+textarea.form-control
+    border-radius: $border-radius
+    border: 2px solid $border-color
+    color: $colors['black']
+    &:focus // inputs selecionados
+      border: 2px solid $border-color-focus
+    &[disabled]
+      border: 2px solid darkgray
+
+input.is-error
+select.is-error
+textarea.is-error
+    border: 2px solid #de4040
+    color: $colors['black']
+
+input.is-valid
+select.is-valid
+textarea.is-valid
+    border: 2px solid $colors['escola']
+    color: $colors['black']
+
+
+input[type="file"]
+  border 0
+
+select
+select.form-control
+  /* styling */
+  display: inline-block;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  /* reset */
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+
+select
+select.form-control
+  background-image: url(http://www.pngmart.com/files/3/Down-Arrow-PNG-Clipart.png)
+  background-position:
+    calc(100% - 20px) 1em
+  background-size: 15px
+  background-repeat: no-repeat;
+

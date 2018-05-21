@@ -1,0 +1,33 @@
+block settings
+    - var title = 'Metanoia -  Urna CHAMAmento'
+    - var faceTitle = "Bootstrap Guide"
+    - var faceDesc= "texto para descrever o conteudo"
+    - var faceImage = "http://euro-travel-example.com/thumbnail.jpg"
+    - var faceUrl = "http://euro-travel-example.com/index.htm"
+    - var _DEV = true
+doctype
+html(lang="pt")
+    head
+        include ../_partials/meta-tags
+        <link rel="apple-touch-icon" href="icon.png"> 
+        title #{title}
+        if _DEV
+            link(rel="preload", href="css/plugins.css", as="style")
+            link(rel="preload", href="css/style.css", as="style")
+        else
+            link(rel="preload", href="css/all.biz.min.css", as="style")            
+        block CSS
+            // build:css css/all.biz.min.css
+            link(rel="stylesheet", href="css/plugins.css")
+            link(rel="stylesheet", href="css/style.css")
+            // endbuild
+    body
+        .container
+            header
+                .chamanento
+                    img.logo(src="img/logo.jpg", alt="CHAMAmento")
+        block content
+
+        block scriptsJS
+
+            

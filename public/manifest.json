@@ -1,0 +1,26 @@
+{
+    "short_name": "",
+    "name": "",
+    "start_url": "index.html?launcher=true",
+    "icons": [
+      {
+        "src": "",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "background_color": "#FAFAFA",
+    "theme_color": "#512DA8", 
+    "display": "standalone",  
+    "orientation": "portrait" 
+  }

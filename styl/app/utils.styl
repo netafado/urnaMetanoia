@@ -1,0 +1,53 @@
+.relative
+    position: relative
+
+.absolute 
+    position: absolute
+
+.z-alto
+    z-index: 2
+
+.pd-0
+    padding: 0
+
+
+.align-flex
+    display flex
+
+.align-center
+    @extends .align-flex
+    justify-content: center
+    & > *
+        align-self: center
+
+// melhorar acessibilidade
+img[alt=""]
+    border 4px solid red
+    position: relative
+    &::after
+        width: 100px
+        height: 40px
+        content: "INSIRA O ATRIBUTO ALT"
+        bottom: 0;
+        position: absolute
+
+
+
+div.laptop-wrapper {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 67.5%;
+    height: 0;
+}
+div.laptop-wrapper iframe {
+    box-sizing: border-box;
+    background: url(https://s3-sa-east-1.amazonaws.com/happybiz-web/Experiencia-De-Sucesso/site-h/img/jordan/laptop.png) center center no-repeat;
+    background-size: contain;
+    padding: 11.9% 15.5% 14.8%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
