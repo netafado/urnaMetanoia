@@ -1,0 +1,41 @@
+extends ./_layouts/bootstrap.pug
+
+block content
+    .flex-wrapper
+        .container-fluid
+            .col-sm-6.visor.text-center
+                .w-visor
+                    h2(style="margin-top: 120px") Manifesto
+                    .manifesto
+                        h1#manifesto 00
+                    .manifiesto-desc
+                        h5#manifiesto-desc 
+                    .logobiz
+                        img(src="img/biz.png", alt="Logo HappyBiz")
+
+            .col-sm-6
+                .teclado
+                    .chamanento
+                        img.logo(src="img/logo.svg", alt="CHAMAmento")
+                    .w-btns
+                        each i in [1,2,3,4,5,6,7,8,9,0]
+                            .btn-chamamento
+                                .clicavel(data-number=i, ontouchstart="")
+                                    h1 #{i}
+                        .pd-40-top.text-center(style="width:100%")
+                            button.btns-main.corrigir#corrigir(ontouchstart="", style="width:45%") Corrigir
+                            button.btns-main.confirmar#confirmar(ontouchstart="", style="width:50%", disabled)  Confirmar                        
+                                    
+
+            audio#sonFinalizar(src="./sons/finalizar.mp3")
+            audio#somClique(src="./sons/clique.wav")
+
+
+
+            
+            
+
+            
+
+block append scriptsJS 
+    script(src="js/app.js")

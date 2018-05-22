@@ -6,11 +6,17 @@ block content
             .col-sm-12.visor.text-center
                 .chamanento
                     img.logo(src="./img/logo-azul.png", alt="CHAMAmento", style="max-width:60px")
-                h4(style="margin-top:30px") Bem-vindo ao plebiscito.                                  
+                h4(style="margin-top:30px") Obrigado pelo seu voto.                                  
                 .pd-20-top.text-center
-                    a(href="./urna.html",ontouchstart="").btns-main.confirmar Iniciar Votação
+                    a(href="./urna.html", ontouchstart="").btns-main.confirmar Novo voto
 
-          
+        audio#sonFinalizar(src="./sons/finalizar.mp3")
+
+
+            
+            
+
+            
 
 block append scriptsJS 
-    script(src="js/app.js")
+    script(src="js/app.final.js")

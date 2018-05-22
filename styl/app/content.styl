@@ -1,3 +1,45 @@
+a 
+a:hover
+    color white 
+    text-decoration none
+.chamanento
+    text-align center 
+    img
+        margin-bottom 20px
+
+.manifiesto-desc
+    padding 10px
+    h5
+        padding-top 20px
+        padding-right 10px
+        padding-left 10px
+        border-top 1px solid lightgray
+.logobiz
+    position absolute
+    bottom 10px
+    width 100%    
+    img
+        max-width 40px
+        margin-left auto
+        margin-right auto
+.flex-wrapper
+    display flex
+    width 100%
+    height 100%
+    &  > *
+        width 100%
+        align-self center
+.tecladBtn
+    max-width: 700px;
+    padding: 20px;
+.logoMetanoia-bottom
+    position absolute 
+    top 10px
+    width 100%
+    text-align center
+    img 
+        max-width 120px
+        max-width auto
 .w-btns
     max-width 467px
     margin-top 40px
@@ -43,7 +85,7 @@
     background-color #272424
     border-radius: 2px
     color white
-    padding: 10px 40px
+    padding: 10px 30px
     font-size: 20px
 .confirmar
     border 1px solid darken(#0baf4c, 20%)
@@ -53,6 +95,10 @@
         border-bottom 1px solid black
         box-shadow inset 4px 4px 4px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0)
         background-color darken(#0baf4c, 20%)
+[disabled]
+    border 1px solid darken(gray, 20%)
+    background-color gray
+    border-bottom 3px solid darken(gray, 50%)
 .corrigir
     border 1px solid darken(#ea5b0c, 20%)
     background-color #ea5b0c
@@ -63,23 +109,39 @@
         background-color darken(#ea5b0c, 20%)                
 
 .teclado
+    max-width: 700px;
     padding: 20px;
     background-color: white;
     box-shadow: 1px 1px 2px #bfbebe
     button 
         width 48%
 
+.manifesto
+    margin: auto;
+    border-radius: 100%;
+.logobiz-bottom
+    position absolute 
+    bottom 10px
+    width 100%
+    text-align center
+    img 
+        margin auto
+        max-width 30px
 .w-visor
-    max-width 320px
-    margin: auto
-    border 1px solid white
-    text-align: center
-    border-radius: 10px
-    box-shadow: inset 4px 4px 2px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0)
-    background-color: white
-    margin-top 50px
+    position relative
+    height: 660px;
+    max-width: 620px;
+    margin: auto;
+    border: 4px solid #fff;
+    text-align: center;
+    border-left: 4px solid #e6e6e6;
+    border-bottom: 2px solid #f5eeee;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0);
+    background-color: #fffff9;
+    margin-top: 0;
     h1 
-        font-size: 90px
+        font-size: 200px
 
 @media screen and (max-width: $queries['medium'])
     .artigo-w
