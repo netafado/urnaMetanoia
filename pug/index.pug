@@ -1,19 +1,27 @@
 extends ./_layouts/bootstrap.pug
 
 block content
-    .container-fluid
+    .container-fluid(style="margin-top: 50px")
+        .col-sm-6.visor.text-center
+            .w-visor
+                h3 Manifesto
+                .manifesto
+                    h1#manifesto 00
         .col-sm-6.teclado
             .w-btns
                 each i in [1,2,3,4,5,6,7,8,9,0]
                     .btn-chamamento
-                        .clicavel
+                        .clicavel(data-number=i)
                             h1 #{i}
+            .pd-40-top.text-center
+                button.btns-main.corrigir Corrigir
+                button.btns-main.confirmar#confirmar Confirmar
+        audio#sonFinalizar(src="/sons/finalizar.mp3")
+        audio#somClique(src="/sons/clique.wav")
 
-        .col-sm-6.visor
-            .w-visor
-                h3 Manifesto
-                .manifesto
-                    h1 00
+
+
+            
             
 
             

@@ -915,7 +915,7 @@ body {
   overflow: hidden;
 }
 header {
-  padding: 20px;
+  padding: 10px 0 0 0;
   text-align: center;
 }
 .logo {
@@ -923,22 +923,28 @@ header {
   height: auto;
 }
 .w-btns {
+  max-width: 467px;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #353333;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  box-shadow: 2px 2px 4px #d3d3d3;
+  box-shadow: 2px 4px 2px #a9a9a9;
   padding: 20px;
+  margin: auto;
   padding-top: 40px;
   padding-bottom: 40px;
+  border: 2px solid #000;
+  border-left: 5px solid #262626;
+  border-bottom: 5px solid #000;
+  border-top: 1px solid #232222;
 }
 .w-btns .btn-chamamento {
   -ms-flex-item-align: center;
@@ -954,16 +960,68 @@ header {
   border: 1px solid #000;
   border-bottom: 3px solid #000;
   cursor: pointer;
-  background-color: #272525;
+  background-color: #272424;
+  border-radius: 5px;
 }
 .w-btns .btn-chamamento .clicavel:active {
   border-bottom: 1px solid #000;
   box-shadow: inset 4px 4px 10px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0);
-  background-color: #312e2e;
+  background-color: #232222;
 }
 .w-btns .btn-chamamento .clicavel h4 {
   margin: 0;
   padding: 0;
+}
+.btns-main {
+  border: 1px solid #000;
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+  background-color: #272424;
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 20px;
+}
+.confirmar {
+  border: 1px solid #098c3d;
+  background-color: #0baf4c;
+  border-bottom: 3px solid #055826;
+}
+.confirmar:active {
+  border-bottom: 1px solid #000;
+  box-shadow: inset 4px 4px 4px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0);
+  background-color: #098c3d;
+}
+.corrigir {
+  border: 1px solid #bb490a;
+  background-color: #ea5b0c;
+  border-bottom: 3px solid #752d06;
+}
+.corrigir:active {
+  border-bottom: 1px solid #000;
+  box-shadow: inset 4px 4px 4px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0);
+  background-color: #bb490a;
+}
+.teclado {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px #bfbebe;
+}
+.teclado button {
+  width: 48%;
+}
+.w-visor {
+  max-width: 320px;
+  margin: auto;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 2px rgba(0,0,0,0.2), 0 0 10px rgba(0,0,0,0);
+  background-color: #fff;
+  margin-top: 50px;
+}
+.w-visor h1 {
+  font-size: 90px;
 }
 @media screen and (max-width: 768px) {
   .artigo-w .dia {

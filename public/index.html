@@ -25,72 +25,78 @@
   <body>
     <div class="container">
       <header>
-        <div class="chamanento"><img class="logo" src="img/logo.jpg" alt="CHAMAmento"></div>
+        <div class="chamanento"><img class="logo" src="img/logo.svg" alt="CHAMAmento"></div>
       </header>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 50px;">
+      <div class="col-sm-6 visor text-center">
+        <div class="w-visor">
+          <h3>Manifesto</h3>
+          <div class="manifesto">
+            <h1 id="manifesto">00</h1>
+          </div>
+        </div>
+      </div>
       <div class="col-sm-6 teclado">
         <div class="w-btns">
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="1">
               <h1>1</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="2">
               <h1>2</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="3">
               <h1>3</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="4">
               <h1>4</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="5">
               <h1>5</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="6">
               <h1>6</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="7">
               <h1>7</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="8">
               <h1>8</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="9">
               <h1>9</h1>
             </div>
           </div>
           <div class="btn-chamamento">
-            <div class="clicavel">
+            <div class="clicavel" data-number="0">
               <h1>0</h1>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6 visor">
-        <div class="w-visor">
-          <h3>Manifesto</h3>
-          <div class="manifesto">
-            <h1>00</h1>
-          </div>
+        <div class="pd-40-top text-center">
+          <button class="btns-main corrigir">Corrigir</button>
+          <button class="btns-main confirmar" id="confirmar">Confirmar</button>
         </div>
       </div>
+      <audio id="sonFinalizar" src="/sons/finalizar.mp3"></audio>
+      <audio id="somClique" src="/sons/clique.wav"></audio>
     </div>
     <script src="js/app.js"></script>
   </body>
