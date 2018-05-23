@@ -1,0 +1,36 @@
+#loader
+#device
+	display: flex
+	width: 100%
+	height 100%
+	z-index: 99999999
+	position: fixed
+	background-color: $colors["inverse"]
+	justify-content: center
+	.loader-img
+	.device
+		width: 50px
+		height 50px
+		align-self: center
+		animation: fadeIn 2s infinite
+
+
+#device
+	display none
+	z-index 9999999
+	background-color: $colors['second']
+	.device
+		width: 140px
+		height 80px
+		margin auto
+		text-align center
+		align-self: center
+		animation: none
+		img
+			margin auto
+			animation rotacaoDevice 2s infinite
+		p
+			margin-top: 10px
+			font-size 12px
+			line-height 1
+			text-align center

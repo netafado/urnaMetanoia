@@ -1,6 +1,8 @@
 extends ./_layouts/bootstrap.pug
 
 block content
+    #loader
+        img.loader-img.img-responsive(src="img/chamaPeq.svg", alt="Lodder")
     .flex-wrapper.bg-chama
         .container-fluid
             .col-sm-12.visor.text-center
@@ -18,4 +20,4 @@ block content
     .carinha
         img(src="/img/logo-azul.png", alt="Biz")
 block append scriptsJS 
-    script(src="js/app.js")
+    script(src="js/loader.js")

@@ -922,6 +922,59 @@ header {
   max-width: 80px;
   height: auto;
 }
+#loader,
+#device {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  position: fixed;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#loader .loader-img,
+#device .loader-img,
+#loader .device,
+#device .device {
+  width: 50px;
+  height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-animation: fadeIn 2s infinite;
+          animation: fadeIn 2s infinite;
+}
+#device {
+  display: none;
+  z-index: 9999999;
+  background-color: ;
+}
+#device .device {
+  width: 140px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-animation: none;
+          animation: none;
+}
+#device .device img {
+  margin: auto;
+  -webkit-animation: rotacaoDevice 2s infinite;
+          animation: rotacaoDevice 2s infinite;
+}
+#device .device p {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+}
 a,
 a:hover {
   color: #fff;
@@ -1164,6 +1217,28 @@ a:hover {
   .ranking .frase h5 {
     font-size: 20px;
     text-transform: capitalize;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @supports (-ms-ime-align: auto) {
