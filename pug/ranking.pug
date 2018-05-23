@@ -1,0 +1,21 @@
+extends ./_layouts/bootstrap.pug
+
+block content
+    .flex-wrapper.bg-chama
+        .container-fluid
+            .col-sm-12.visor.text-center
+                .ranking-flex
+                    each i, item in ['EU DESEJO QUE AS EMPRESAS SEJAM COMUNIDADES.', "QUE O HOLOGRAMA SE FUNDA E SE CONFUNDA COMO UM ÚNICO DESEJO.", "EU DESEJO UMA COMUNIDADE GERADORA DE LÍDERES DE COMUNIDADES.", "EU DESEJO IMPULSIONAR RESULTADOS DE CORPO, MENTE E ALMA.", "EU DESEJO IGUALDADE DE OPORTUNIDADES E RIQUEZA PARA TODOS.", "EU DESEJO QUE AS RIQUEZAS GERADAS SEJAM INVESTIDAS EM PROL DA COMUNIDADE.", "EU DESEJO A CRIAÇÃO COLETIVA.", "EU DESEJO EMPRESAS COM VALORES PROGRESSISTAS.", "EU DESEJO PRESERVAR O PLANETA.", "EU DESEJO INCLUSÃO."]
+                        .ranking
+                            .well
+                                h1.pos #{item + 1 +"º"} 
+                                .frase 
+                                    h5 
+                                        span.position 02: 
+                                        | #{i}
+
+          
+    .carinha
+        img(src="/img/logo-azul.png", alt="Biz")
+block append scriptsJS 
+    script(src="js/app.js")

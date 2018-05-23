@@ -1104,18 +1104,66 @@ a:hover {
 .w-visor h1 {
   font-size: 200px;
 }
-@media screen and (max-width: 768px) {
-  .artigo-w .dia {
-    font-size: 45px;
+.ranking-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ranking-flex > * {
+  width: 24%;
+  padding: 5px 4px;
+}
+.ranking-flex .well {
+  height: 100%;
+  min-height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+}
+.bg-chama {
+  background: url("../img/chama.svg") center center no-repeat;
+  background-size: 200px;
+  background-position: bottom left;
+}
+.ranking h1 {
+  font-size: 7rem;
+  color: #ed863a;
+}
+.ranking .frase {
+  color: #000;
+}
+.ranking .frase h5 {
+  text-transform: capitalize;
+}
+.ranking .frase h5 .position {
+  color: #ed863a;
+  font-size: 35px;
+}
+.carinha {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.carinha img {
+  max-width: 10px;
+}
+@media screen and (max-height: 800px) {
+  .ranking h1 {
+    font-size: 7rem;
+    color: #ed863a;
   }
-  .artigo-textos {
-    padding-left: 20px;
+  .ranking .frase {
+    color: #000;
   }
-  .artigo-textos h4 {
-    text-align: left;
-  }
-  .artigo-textos p {
-    text-align: left;
+  .ranking .frase h5 {
+    font-size: 20px;
+    text-transform: capitalize;
   }
 }
 @supports (-ms-ime-align: auto) {
